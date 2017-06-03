@@ -1,4 +1,4 @@
-//localStorage.tasks = "";
+localStorage.tasks = "";
 if (localStorage.tasks != "") {
     document.querySelector("#list").innerHTML = localStorage.tasks;
 }
@@ -17,6 +17,26 @@ function cli() {
     inpb.type = "checkbox";
     inp.appendChild(inpb);
 
+    var but = document.createElement("input");
+    but.className = "but";
+    but.type = "button";
+    but.value = "delete";
+    //but.innerHTML = "<a onclick='cut(this)'>删除</a>"
+    inp.appendChild(but);
+    /*function cut(x) {
+        var inp = x.parentNode.parentNode;
+        inp.parentNode.removeChild(inp);
+    }*/
+    function cut() {
+        var butt = document.querySelectorAll(".but");
+        for (var i = 0; i < butt.length; i++) {
+            butt[i].addEventListener("click", cutt);
+            function cutt() {
+                var a = document.querySelectorAll(".task");
+                var b = a.splice(i,1)[0];
+            }
+        }
+    }
     if (window.localStorage) {
         localStorage.setItem("tasks",document.querySelector("#list").innerHTML);
     }
