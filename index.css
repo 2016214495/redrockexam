@@ -1,0 +1,39 @@
+.tdl{
+    width: 400px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+    font-size: 40px;
+    color: #CC99CC;
+}
+.inp{
+    margin: 0 auto;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #C0C0C0;
+}
+#con{
+    outline: none;
+    border: none;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 20px;
+    float: left;
+}
+#add{
+    float: left;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: #CC99CC;
+    line-height: 38px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 90px;
+}
+.task{
+    margin: 0 auto;
+    width: 400px;
+    font-size: 16px;
+    margin-top: 10px;
+}
